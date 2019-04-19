@@ -9,17 +9,5 @@ class HighScores(object):
         return self.scores[-1]
 
     def personal_top_three(self):
-        max_scores = []
-        scores2 = self.scores.copy()
-
-        i = 0
-        while i < 3:
-            try:
-                max_score = max(scores2)
-            except ValueError:
-                break
-            max_score_index = scores2.index(max_score)
-            scores2.pop(max_score_index)
-            max_scores.append(max_score)
-            i += 1
-        return max_scores
+        top_three_scores = sorted(self.scores, reverse=True)[0:3]
+        return top_three_scores
