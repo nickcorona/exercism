@@ -27,3 +27,15 @@ indices = [alphabet.index(char) - shift for char in encoded_string]
 
 decoded_string = ''.join([alphabet[index] for index in indices])
 print(decoded_string)
+
+###
+
+string = 'balls'
+key = 'dddd'
+
+shift_lst = [alphabet.index(letter) for letter in key]
+
+counter = 0
+letter_lst = []
+while counter < len(string):
+    alphabet[shift_lst[0]]
