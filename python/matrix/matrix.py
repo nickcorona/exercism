@@ -1,6 +1,7 @@
 class Matrix(object):
     def __init__(self, matrix_string):
         self.matrix = []
+
         # converts to list of lists
         for string in matrix_string.strip().split("\n"):
             self.matrix.append(string.split())
