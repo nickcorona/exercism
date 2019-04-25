@@ -1,27 +1,22 @@
 def is_paired(input_string):
-    open_square = 0
-    open_round = 0
-    open_curly = 0
+    open_brackets = 0
+    input_string = input_string.replace(" ", "")
     for bracket in input_string:
-        if bracket == '[':
-            open_square += 1
-        elif bracket == '(':
-            open_round += 1
-        elif bracket == '{':
-            open_curly += 1
-        elif bracket == ']':
-            open_square -= 1
-        elif bracket == ')':
-            open_round -= 1
-        elif bracket == '}':
-            open_curly -= 1
-        if open_square < 0 or open_round < 0 or open_curly < 0:
+        if bracket in ["[", "(", "{"]:
+            open_brackets += 1
+        else:
+            open_brackets -= 1
+        if open_brackets < 0:
             return False
-    open_brackets = open_square + open_round + open_curly
-    if open_brackets == 0:
+    if (
+        (input_string.count("{") == input_string.count("}"))
+        and (input_string.count("(") == input_string.count(")"))
+        and (input_string.count("[") == input_string.count("]"))
+    ):
         return True
     else:
         return False
+
 
 # brackets = '[]'
 
