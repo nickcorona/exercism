@@ -26,4 +26,13 @@ class SgfTree(object):
 
 
 def parse(input_string):
-    pass
+    if input_string.islower():
+        raise ValueError("Keys must be uppercase.")
+    elif len(input_string) == 0:
+        raise ValueError("Blank Sgf.")
+
+    # return SgfTree(input_string)
+
+
+"(;A[B];B[C])".strip("()").split(";")[1:]
+
