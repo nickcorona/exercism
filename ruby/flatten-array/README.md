@@ -1,8 +1,14 @@
-# Gigasecond
+# Flatten Array
 
-Calculate the moment when someone has lived for 10^9 seconds.
+Take a nested list and return a single flattened list with all values except nil/null.
 
-A gigasecond is 10^9 (1,000,000,000) seconds.
+The challenge is to write a function that accepts an arbitrarily-deep nested list-like structure and returns a flattened structure without any nil/null values.
+
+For Example
+
+input: [1,[2,3,null,4],[null],5]
+
+output: [1,2,3,4,5]
 
 * * * *
 
@@ -20,16 +26,16 @@ the test file.
 
 Run the tests from the exercise directory using the following command:
 
-    ruby gigasecond_test.rb
+    ruby flatten_array_test.rb
 
 To include color from the command line:
 
-    ruby -r minitest/pride gigasecond_test.rb
+    ruby -r minitest/pride flatten_array_test.rb
+
 
 ## Source
 
-Chapter 9 in Chris Pine's online Learn to Program tutorial. [http://pine.fm/LearnToProgram/?Chapter=09](http://pine.fm/LearnToProgram/?Chapter=09)
+Interview Question [https://reference.wolfram.com/language/ref/Flatten.html](https://reference.wolfram.com/language/ref/Flatten.html)
 
 ## Submitting Incomplete Solutions
-
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
