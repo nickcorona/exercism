@@ -1,10 +1,13 @@
+import numpy as np
+
+
 def square_of_sum(count):
-    pass
+    return sum(np.array(range(1, count + 1))) ** 2
 
 
 def sum_of_squares(count):
-    pass
+    return sum(np.array(range(1, count + 1)) ** 2)
 
 
 def difference(count):
-    pass
+    return square_of_sum(count) - sum_of_squares(count)
