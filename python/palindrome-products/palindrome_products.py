@@ -15,4 +15,3 @@ min_factor = 1
 combination_lst = combinations_with_replacement(range(min_factor, max_factor + 1), r=2)
 [tup[0] * tup[1] for tup in combination_lst]
 
-
