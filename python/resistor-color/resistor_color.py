@@ -1,10 +1,9 @@
 def color_code(color):
-    color_num_dict = dict(zip(colors(), range(0, len(colors()))))
-    return color_num_dict[color]
+    return colors().index(color)
 
 
 def colors():
-    colors = [
+    return [
         "black",
         "brown",
         "red",
@@ -16,4 +15,3 @@ def colors():
         "grey",
         "white",
     ]
-    return colors
