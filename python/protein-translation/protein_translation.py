@@ -1,5 +1,6 @@
 def proteins(strand):
     codons = []
+    # split RNA into codons for easy lookup in dict
     for i in range(0, len(strand), 3):
         codons.append(strand[i : i + 3])
 
