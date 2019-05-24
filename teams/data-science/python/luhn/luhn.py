@@ -5,7 +5,7 @@ class Luhn(object):
 
     def is_valid(self):
         """Returns true if card number is valid according to Luhn algorithm.
-        Card number must be of length greater than 1. Only digit and and space
+        Card number must be of length greater than 1. Only digit and space
         characters are allowed."""
         if not self.card_num.isnumeric() or len(self.card_num) <= 1:
             return False
